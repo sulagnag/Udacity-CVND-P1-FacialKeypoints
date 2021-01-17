@@ -22,5 +22,9 @@ I have used a CNN with the following layers
 
 To avoid overfitting, I have used dropout layers and batch normalisation.
 
-#The feed forward behaviour
+## The feed forward behaviour
 The network takes an image tensoe as input. The conv layers, with the relu activation function, followed by the max pooling layers, detect the features from the image. The last fully connected layers mark the 68 keypoints from the detected features.
+
+## Backpropagation
+While training, the network compares its output of 68 keypoints with the labels provided. Depending on the error, the network weights are updated.
+Overtime, the network learns and the error(loss) reduces as seen in the graph
