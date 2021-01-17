@@ -16,8 +16,11 @@ This facial keypoints dataset consists of 5770 color images. All of these images
 
 ## The model
 I have used a CNN with the following layers
-<li> 1.Convolutional layers
-<li> 2.Maxpooling layers
-<li> 3.Fully-connected layers
+<li> Convolutional layers
+<li> Maxpooling layers
+<li> Fully-connected layers
 
 To avoid overfitting, I have used dropout layers and batch normalisation.
+
+#The feed forward behaviour
+The network takes an image tensoe as input. The conv layers, with the relu activation function, followed by the max pooling layers, detect the features from the image. The last fully connected layers mark the 68 keypoints from the detected features.
