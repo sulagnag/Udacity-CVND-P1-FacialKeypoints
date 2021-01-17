@@ -9,3 +9,15 @@ Facial keypoints (also called facial landmarks) are the small magenta dots shown
 <img src='images/landmarks_numbered.jpg' width=50% height=50%/>
 
 ## The Dataset
+This facial keypoints dataset consists of 5770 color images. All of these images are separated into either a training or a test set of data.
+
+3462 of these images are training images to use for creating a model to predict keypoints.
+2308 are test images, which will be used to test the accuracy of the model.
+
+## The model
+I have used a CNN with the following layers
+<li> 1.Convolutional layers
+<li> 2.Maxpooling layers
+<li> 3.Fully-connected layers
+
+To avoid overfitting, I have used dropout layers and batch normalisation.
